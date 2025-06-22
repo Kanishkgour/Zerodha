@@ -1,0 +1,96 @@
+/* Funds.css */
+.funds {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: rgba(40, 40, 55, 0.9); */
+  padding: 14px 20px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 48%;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  border-radius: 10px;
+  padding: 18px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding-bottom: 6px;
+}
+
+.imp {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.colored {
+  color: #8cffad;
+}
+
+.btn {
+  padding: 10px 18px;
+  margin-left: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.btn-green {
+  background-color: #22c55e;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+.btn-blue {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.commodity {
+  margin-top: 24px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+}

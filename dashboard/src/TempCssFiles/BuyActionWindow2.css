@@ -1,0 +1,83 @@
+/* BuyActionWindow.css */
+.container#buy-window {
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  /* background: rgba(30, 30, 45, 0.85); */
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputs fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.inputs legend {
+  color: #a0a0ff;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 4px;
+  /* background-color: #fff; */
+  color: #333;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.buttons span {
+  font-size: 0.9rem;
+  color: #b0ffb0;
+}
+
+.buttons div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.25s ease-in-out, transform 0.2s ease;
+}
+
+.btn-blue {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #3b78c4;
+  transform: translateY(-2px);
+}
+
+.btn-grey {
+  /* background-color: #aaa; */
+  color: #1e1e1e;
+}
+
+.btn-grey:hover {
+  /* background-color: #8f8f8f; */
+  transform: translateY(-2px);
+}

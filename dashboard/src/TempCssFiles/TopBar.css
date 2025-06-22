@@ -1,0 +1,65 @@
+/* TopBar.css */
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(135deg, #1e1e30, #252838); */
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  margin-bottom: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.indices-container {
+  display: flex;
+  gap: 24px;
+}
+
+.nifty, .sensex {
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 10px 16px;
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s ease;
+}
+
+.nifty:hover, .sensex:hover {
+  transform: translateY(-2px);
+}
+
+.index {
+  font-size: 0.9rem;
+  color: #a0a0ff;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.index-points {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.percent {
+  font-size: 0.85rem;
+  color: #8cffad;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .topbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .indices-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

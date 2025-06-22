@@ -1,0 +1,18 @@
+/* Home.css */
+body {
+  margin: 0;
+  /* background: linear-gradient(135deg, #131418, #1e2130); */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}

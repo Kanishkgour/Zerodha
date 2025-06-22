@@ -1,0 +1,71 @@
+/* Summary.css */
+.username h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin: 12px 0;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.section span p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a0a0ff;
+  margin-bottom: 12px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.first {
+  flex: 1;
+}
+
+.first h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.first h3.profit {
+  color: #4ade80;
+}
+
+.first p {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+.second {
+  flex: 1;
+  text-align: right;
+}
+
+.second p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+.second span {
+  font-weight: bold;
+  color: #ffffff;
+}
