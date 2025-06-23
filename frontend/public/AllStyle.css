@@ -1,0 +1,164 @@
+body {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.footerLink {
+  font-size: 0.7rem;
+  letter-spacing: -0.5px;
+}
+
+.Nav-Logo {
+  width: 12rem;
+}
+
+.nav-anchor-tag {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.open-acc-heading {
+  color: #424242;
+  font-size: 44px;
+}
+
+.signup-Btn {
+  width: 13rem;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #387ED1;
+}
+
+.signup-Btn:hover {
+  background-color: #1465c8;
+
+}
+
+.about-Hero-row {
+  font-size: 1.25rem;
+}
+
+.people-Logo-circle {
+  height: 295px;
+  width: 295px;
+  margin: 20px;
+  border-radius: 50%;
+  background-size: cover;
+  border: border-box;
+  background-position: center;
+  border-image-width: auto;
+  justify-content: center;
+}
+
+.people-logo-circle-parent {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 0.8rem;
+}
+
+.about-team-container {
+  width: 100%;
+  border: 1px solid black;
+
+}
+
+.employee-logo-circle-parent {
+  font-size: 0.75rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.employee-Logo-circle {
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: cover;
+  border: border-box;
+  background-position: center;
+  border-image-width: auto;
+  justify-content: center;
+}
+
+
+
+
+
+.profile-circle {
+
+  border-radius: 50%;
+  background-color: #3f83c7;
+}
+
+.employee-logo-circle {
+  width: 237px;
+  height: 237px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.universe-images {
+  margin-top: 20px;
+  width: 190px;
+}
+
+.pricing-img {
+  width: 180px;
+}
+
+.pricing-p {
+  font-size: 0.9rem;
+}
+
+.brokerage-table,
+charges {
+  font-family: "Poiret One", sans-serif;
+  font-family: Arial, sans-serif;
+}
+
+.brokerage-table table tr td,
+th {
+  padding: 20px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.473);
+
+}
+
+.charges-para {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.charges .row .col h6 {
+  margin-top: 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+.disclaimer p {
+  margin-left: 10px;
+}
+.search-support{
+  width: 100%;
+  height: 3rem;
+}
+
+.supportSection{
+  background-color: #387ed1;
+}
+.createTicket_anchor{
+  margin-left: 1.9rem;
+}
