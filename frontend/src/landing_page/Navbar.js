@@ -7,7 +7,7 @@ function Navbar() {
             <div className=' container-fluid px-5  bg-body-tertiary sticky-top'>
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <Link className=' text-decoration-none '  to="/"><img src='media/logo.svg' className='   Nav-Logo' alt="Logo"></img></Link>
+                        <Link className=' text-decoration-none ' to="/"><img src='media/logo.svg' className='   Nav-Logo' alt="Logo"></img></Link>
 
                         <div class="collapse navbar-collapse justify-content-end fs-4" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
@@ -16,11 +16,13 @@ function Navbar() {
                                 <Link class="nav-link nav-anchor-tag  " to='/product'>Products</Link>
                                 <Link class="nav-link nav-anchor-tag  " to="/pricing">Pricing</Link>
                                 <Link class="nav-link nav-anchor-tag  " to="/support">Support</Link>
-                                <Link class="nav-link nav-anchor-tag  " to="#"><i class="fa-solid fa-bars"></i></Link>
+                                <a class="nav-link nav-anchor-tag  " href="http://localhost:3001">
+                                    Go to Dashboard
+                                </a>
                             </div>
                         </div>
                     </div>
-                </nav> 
+                </nav>
             </div>
         </>
     );
