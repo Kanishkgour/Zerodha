@@ -4,7 +4,7 @@ function RightSection({ ImageUrl, productName, productDesription, learnMore }) {
     return (
         <>
             <div className=' container '>
-                <div className=' row '>
+                <div className=' row prodctRow  '>
 
 
 

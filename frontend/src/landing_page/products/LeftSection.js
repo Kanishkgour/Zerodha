@@ -4,7 +4,7 @@ function LeftSection({ ImageUrl, productName, productDesription, tryDemo, learnM
     return (
         <>
             <div className=' container '>
-                <div className=' row '>
+                <div className=' row  prodctRow'>
                     <div className=' col-5 p-5'>
                         <img src={ImageUrl}></img>
                     </div>
@@ -15,12 +15,12 @@ function LeftSection({ ImageUrl, productName, productDesription, tryDemo, learnM
                             <p className=' p-0 mb-0'>{productDesription}</p>
                         </div>
                         <div className=' p-3' >
-                            <a className='link text-decoration-none ' style={{marginRight  : "3rem"}}  href={tryDemo}>Try Demo <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a className='link text-decoration-none ' style={{ marginRight: "3rem" }} href={tryDemo}>Try Demo <i class="fa-solid fa-arrow-right-long"></i></a>
                             <a className='link text-decoration-none ' href={learnMore}>Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                         <div className=' p-3'>
-                            <a className='link text-decoration-none ' style={{marginRight  : "1.5rem"}} href={googlePlay}><img src="./media/googlePlayBadge.svg" alt='google play' style={{width  : "10rem"}} ></img></a>
-                            <a className='link text-decoration-none ' href={appStore}><img src='./media/appstoreBadge.svg' style={{width  : "10rem"}} ></img></a>
+                            <a className='link text-decoration-none ' style={{ marginRight: "1.5rem" }} href={googlePlay}><img src="./media/googlePlayBadge.svg" alt='google play' style={{ width: "10rem" }} ></img></a>
+                            <a className='link text-decoration-none ' href={appStore}><img src='./media/appstoreBadge.svg' style={{ width: "10rem" }} ></img></a>
                         </div>
 
                     </div>

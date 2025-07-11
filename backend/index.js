@@ -17,7 +17,6 @@ const session = require("express-session");
 const PORT = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
 
-
 app.use(session(
     {
         secret: 'your_secret_key',
@@ -39,15 +38,15 @@ passport.serializeUser(userModel.serializeUser());
 passport.deserializeUser(userModel.deserializeUser());
 
 app.post("/login", (req, res, next) => {
-  passport.authenticate("local", (err, user, info) => {
-    if (err) return next(err);
-    if (!user) return res.status(401).json({ message: "Invalid credentials" });
+    passport.authenticate("local", (err, user, info) => {
+        if (err) return next(err);
+        if (!user) return res.status(401).json({ message: "Invalid credentials" });
 
-    req.logIn(user, (err) => {
-      if (err) return next(err);
-      return res.status(200).json({ message: "Login successful", user: { name: user.username, email: user.email } });
-    });
-  })(req, res, next);
+        req.logIn(user, (err) => {
+            if (err) return next(err);
+            return res.status(200).json({ message: "Login successful", user: { name: user.username, email: user.email } });
+        });
+    })(req, res, next);
 });
 
 
@@ -62,7 +61,7 @@ app.post("/signup", async (req, res) => {
             username: name,
         })
         const registeredUser = await userModel.register(newUser, password);
-        res.send("Registered User : ", registeredUser);
+        res.send(registeredUser);
     } catch (err) {
         console.log("Signup Error for Saving User Data : ", err.message)
     }

@@ -1,13 +1,17 @@
-
-import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Summary = () => {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const name = params.get("name");
   return (
     <>
-      <div className="username">
-        <h6>Hi, User!</h6>
-        <hr className="divider" />
-      </div>
+      {name && (
+        <div className="username">
+          <h6>Hi! {name}</h6>
+          <hr className="divider" />
+        </div>
+      )}
 
       <div className="section">
         <span>

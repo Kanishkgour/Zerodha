@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
@@ -17,7 +17,9 @@ const Menu = () => {
 
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
-
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const name = params.get("name");
   return (
     <div className="menu-container">
       <img alt="Logo" src="logo.png" style={{ width: "50px" }} />
@@ -91,9 +93,13 @@ const Menu = () => {
           </li>
         </ul>
         <hr />
-        <div className="profile" onClick={handleProfileClick}>
-          <p className="username">USERID</p>
-        </div>
+        {name && (
+          <div className="profile" onClick={handleProfileClick}>
+            <i class="fa-regular fa-user"></i> &nbsp; &nbsp;
+            <p className="username">{name}</p>
+          </div>
+        )}
+
       </div>
     </div>
   );

@@ -16,9 +16,9 @@ function Navbar() {
                                 <Link class="nav-link nav-anchor-tag  " to='/product'>Products</Link>
                                 <Link class="nav-link nav-anchor-tag  " to="/pricing">Pricing</Link>
                                 <Link class="nav-link nav-anchor-tag  " to="/support">Support</Link>
-                                <a class="nav-link nav-anchor-tag  " href="http://localhost:3001">
+                                {/* <a class="nav-link nav-anchor-tag  " href="http://localhost:3001">
                                     Go to Dashboard
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
