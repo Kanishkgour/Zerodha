@@ -5,7 +5,8 @@ function Price() {
                 <div className='row text-center'>
                     <h1 className='mt-5'>Invest in everything</h1>
                     <p>Online platform to invest in stocks, derivatives, mutual funds and more.</p>
-                    <button className=' p-2  mx-auto mt-3 signup-Btn '>Sign up Now</button>
+                    <button className=' p-2  mx-auto mt-3 signup-Btn ' > <a href='/signup' className=' text-decoration-none text-white'>Sign up Now</a> </button>
+
                 </div>
             </div>
         </>
